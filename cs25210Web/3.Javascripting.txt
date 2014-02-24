@@ -1,0 +1,14 @@
+24th February 2014: 
+=================
+Javascripting by Hannah Dee
+================
+- Frameworks can simplify stuff in Javascript 
+- variables don't have to be declared 
+- Not really OO
+- External files can help with caching, page load times can be a bit quicker
+- No strict case of inheritence
+- Can use the Number(int) function to turn a string into a number 
+       - Same as with .parse
+- Can use typeofto show the typeof a variable 
+- requestAnimationFrame: requests a redraw, redraws as quick as the browser can do it.	
+
