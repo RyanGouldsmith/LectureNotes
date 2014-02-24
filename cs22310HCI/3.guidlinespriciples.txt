@@ -13,4 +13,39 @@ Guidlines and priciples:
 	- Curs design problems
 	- cautions for potential danger 
 	- Reminders based on experience.
-
+Guidelines: Helps people by
+	- developing a shared language 
+	- promoting consistency among multiple designers, sequence of actions 
+	- describing best practices 
+- Get the user attention 
+	- Insensity: 2 levels onlu 
+	- Marking: underlining, enclose in a box, bullet points 
+	- size: 4 sizes 
+	- Fonts: Use only up to 3 fonts. 
+	- Blinking: Don't really use this anymore.
+	- Colour: Colour should be kept down to a minimum. 
+	- Audio: Soft tones = positive feedback, harder tones for negative. 
+- embedded links need to be descriptive. 
+- Use unique and desriptive headings 
+- binary choices should always be a checkbox.
+- ISO7 has a set of standards
+	- No exit button should be on the application 
+	- Top LHS has the most weighting 
+	- Don't have pop ups for pointless things.
+- 3 types of principles: 
+	- fundamental principles: 
+		- approaches to the system design 
+		- Steps: 
+			- Determine the users skill level 
+				- Multi-layer designs
+				- Providing an interface for novice users and shortcuts for those who know the system
+			- Identify the tasks
+				- Task analysis: Obsersvation and Interviewing users. 
+				- Helps designs: task frequencies and sequences. Tough decisions on support.
+			- Choose an interaction style. 
+				- Direct manipulation: Select line or attributes from a side bar and produce the result.
+				- Menu Selection:
+				- Form fill-in: Constrainting the user for information. 
+	- Design principles
+	- Usability principles.
+-
