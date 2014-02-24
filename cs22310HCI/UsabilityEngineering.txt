@@ -1,0 +1,46 @@
+17:00 Monday 24th Feb
+====================
+Usability
+====================
+- Early emphasis on types of users and tasks they're going to be putting forward
+- Move the detection of the problem needs real usability testing = reduced cost
+- Activities: 
+	- define thecontext, check feasibility 
+	- understand the problem 
+	- Design the solution 
+	- Implementation 
+	- Evaluation = Big step. 
+	- Evaluate each section 
+- SE vs UE (software eng vs usabil eng)
+	- Se: 
+		involves a system requireing a computerised solution
+	- Design solution: architecture, algorithms 
+	- Evaluation: tested for errors, mismatches
+	- UE
+		Involves understanding those tasks to be supported
+	- Design solution: presentation and the delivery
+	- Evaluation: test code in thesame way, Usability needs are satified, experiments
+- Prototyping: 
+	- Often produced: 
+		- Clarification of requirements
+		- Evaluation of usability 
+	- Could be Paper, with no interaction and functionality 
+	- Could be mock, interactive with dummy functionality.
+- Detailed Design: 
+	- SE: 
+		- interacting processed
+	- UE
+		- Individuals interactions
+		- Design of algorithms, data structure in ters f individual interation 
+- Evaluation: 
+	- SE: 
+		- Testing of logical flow 
+	- UE: 
+		- Evaluation by experts, analysis, testing by users
+		- Testing the logical flowand function of software to support interaction.
+- Lifecycles: 
+	- ModelsforSE often inadequatefor UE
+		- Goals, interface evaluation, direct user envolvement
+	- Star Life Cycle:
+		- Analysis: Formal, organising, working from the system to the user 
+		- Synthesis: Creative, free-thinking, working from the user to system.
