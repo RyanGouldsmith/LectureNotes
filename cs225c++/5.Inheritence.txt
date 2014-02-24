@@ -1,0 +1,29 @@
+Monday 24th February 13:00
+=========================
+Inheritance by Jon Bell
+=========================
+- Stack and Heap Revisited:
+	- Stack: 
+		- Local variables and parameters; Pop from the stack and then push back to the stack.
+	- Heap : 
+		- dynamically allocated memory, Objects in Java. 
+		- keyword new in c++
+		- C++ objects stay there until you deallocate it. 
+		- Don't know where anything is, pointers are needed.
+	- Stack starts from one end, the heap starts from the other. Meets in the middle if things get bad.
+-Inheritence: 
+	- no extends key work
+	- single : means it extends
+	- you can specify how you inherit a class public private protected. 
+	- Nothing is more public that the publicness of the inherited class.
+	- There's no super for the constructor, you use : -InsertBaseClass-(params) this is used for overwrite.
+	- C++ is not naturally polymorphic.
+	- virtual: means we want polymorphism, bind at run time not compile time.
+	- if you have a virtual methods you have to have a virtual destructor.
+	- none virtual members are resolved at compile time. 
+	- look up tables takes more work and therefore slower.
+	- Abstract class:
+		 - =0 indicates pure virual function, which means it in Java terms Abstract function.
+		 - you can have pure virtual destructors.
+		 - 
+
