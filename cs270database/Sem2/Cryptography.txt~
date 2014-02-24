@@ -1,0 +1,73 @@
+Nitin Lecture 4th February 12:00:
+	- Encryption is the conversion of data from plain readable text to cipher text (un readable) that cannot be easily understood by unauthorised people. Plain text -> Cipher text.
+	- Needs a lot of mathematics. 
+	- Caesar Cipher uses an Encryption Key to increment the values to new values. eg. 
+		EK = 3.
+		a + 3 -> d. 
+	- Decryption is the opposite. Cipher text -> Plain text.
+	- Use the opposite Encryption key to decrement the values eg.
+		EK = -3.
+		d -3 -> a
+	- Cryptography is the principle and method of transforming plain text to ciphers or codes.
+	- Plain text: Normal information 
+	- Ciphertext: the transformed text after encryption. 
+	- Cipher: Any method (algorithm) for tranforming text -> ciphertext. 
+	- Key: Is a sequence of symbols or bits which control the operation of the cryptographic algorithm to transform. 
+		- secure this key. 
+	- Cryptanalysis: The hackers way of getting information from cryptography code. 
+		- The art of tranforming cipher text -> plain text without having information about the key. 
+		- You can have Ethical cryptananalyst for the good, to make sure it's secure. 
+		- To move cryptography forward we need constant work from cryptographers and cryptanalysts. 
+	- 2 simple approaches for cryptanalysis:
+		1. Brute Force (password attack)
+			- Trial and error, doesn't try to decrpyt the plaintext but guess work to get keys, passwords etc.
+			- They are useful for keys and passwords etc, but they can take hours, weeks or years.
+			- More complicated passwords and keys the longer it will take.
+			- Try out Every combination
+			- Need a fast and powerful computer to be effective. 
+			- Window Server OS example: 
+				- 50% of the hackers work is helped by Microsoft. 
+				- They only need to work out the password, since MS give out the Administrator account username. 
+				- Even if you change the account name the SID(security Idenifier) will remain the same. 
+				- Examine the SIDs to work out what has been changed. 
+				- Can brute force the account without having issues of being locked out.
+				- Solutions:
+					- Change password frequently 
+					- Renaming Administrator (Dangerous technique) : Read lecture slide
+					- Security Accounts Manager (Dangerous technique) : Read Lecture Slide.
+					- Move the Active Directory to a remote location, making it harder to find. 
+			- Linux Fedora: 
+				- SSH provides secure remote login capability that encypts connection setup and password.
+				- look at slides for the 2 solitions. 
+		2. Frequency Analysis Attack (text attack)
+			- technique to determine the frequency of letters/groups of letters in a ciphertext.
+			- After knowing a frequency of letters then plaintext could easily be retrieved. 
+			- Used to break most cipher texts
+----------------------------------------------------------------------------------------------------------
+Lecture 2: 12:00 5th February: Algorithms
+-------------------------------
+Types of Cryptography:
+	- Classical : applied on text, or characters.
+		- Oldest Techniques 
+		- Substitution technique : Replace plain text with another symbol
+			- Replaced one at a time.
+		- Transposition : Re-arrange the order of the text.
+			- Applies a permutation function to the text.
+			- Uses 2/3 Rail Fence technique.
+		- Product : Combination of substitution and transposition
+	- Symmetric 
+	- Asymmetric 
+	- One-way Cryptography
+- XOR is used widely: 
+- Rotation/ Shift Method: Used with Registers.Right or Left Shift. Encryption key is the number of times you shift the bits.
+- P-Box (Permutation) Replace the letter index with anothers.
+- Shanon's Theory of Confusion and Diffusion:
+	- Confusion:
+		- Relationship can be made complex between ciphertext and key 
+	- Diffusion:
+		- Relationship can be made complex between ciphertext and plaintext.
+- Round Product is used in modern techniques.
+		- S&P box is used. Use SBox and PBox many times and comes out with a complex output.
+		- Different subkey for each different round, created with help of the main encryption key.
+		- 
+- Encoding and Decoding

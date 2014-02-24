@@ -1,0 +1,19 @@
+Friday 7th February 16:00
+=============================
+P=NP problem by Lynda Thomas
+=============================
+- Relatively Efficient: Polynomial time for all inputs. Mergesort requires N log N
+- Get information for InEfficient algorithms
+- Travelling Sales Person:
+	- Given all N state capitals, can you finda route through them that costs < some amount.
+		- Would have to try n! possibilites. => o(n!)
+		- No Polynomial solution.
+- Satifiability:
+	- Assign values to a boolean expression in N variables that makes it true?
+	- p && q is true when P is true and Q is true.
+	- O(2^n) - try all the possibilities: not polynomial.
+- NP: Set of all decision problems with polynomial checking algorithm.
+	- set of all problems solvable in polynomial time on a Nondeterministic turing machine
+- NP Complete-ness 
+	- If there is a polynomial solution for this, then all the other NP would be solved by polynomial
+

@@ -1,0 +1,106 @@
+
+Circular Linked ListS: 
+- one pointer can gain access to last element and the first element. 
+- Problem with remove from back since we have to find the last but one element and then make that null. 
+
+Doubly Linked List:
+- Pointer to the next element and then a pointer to the previous element. 
+- This removes the loop for removeFromBack
+- Just means it's more complicated because there's more updating to do. 
+
+Arrays vs Linked List:
+
+Space consideration: 
+	- Linked lists requires pointers to the nodes, so there is double or triple the space because ti needs room to store this 
+	 - Array needs to require a fix length, if space isn't used it's wasted. 
+Time Consideration: 
+	- Linked List requires more statements, so LinkedLists might be more slower. 
+	- Array are quicker at finding and altering: bubble sort 
+	- Linked List are quicker for addition and removals from the middle. 
+
+
+Linked List Revison: 
+	*look fro code*
+
+Tree Data structure: 
+- To combine searching and adding to get the speed is where the tree is useful.
+- Boxes on the tree are called nodes. 
+- beneath the node is the children 
+- the node above the given node is the parent.
+- The unique node is the root. 
+- no children = a leaf. 
+- Sibling is two leafs. 
+- Everything is the descendant of the root. 
+
+Binary Search Tree: 
+- No more than two children
+- Searchable because all the nodes are used for searching. 
+- A binary tree is either emoty or consists od a node called the root with 2 sub trees. 
+
+===================================================================
+Avl Trees: continued.
+- There are only 2 types of inbalance:
+	- left left and left right. 
+- rebalancing should occur at the deepest unbalanced node.
+===================================================================
+Tables and Hashing 
+- A table has severalfield 
+- To findan entry in thetable you need to know all thecontents of one of the field.The field is the key. 
+- Ideally a key will uniquely identify an entry 
+- ADT for a table: 
+	- Insert
+	- Find: finds the entry of a key and returns it 
+	- Remove: given a key removes it
+	- getIterator: Returns an iterator, may not come back in an order
+- For searching purposes its best to storethe key and the entry separately, may repeat the key in the entry. 
+
+1. Unsorted sequential array:
+	- An array of table nodes consisting of key and an entry. 
+	- Insert: Adds to the back of the array O(1)
+	- Find: Search through the keys all thekeeys O(n)
+	- Remove: Find + replace removed node with last node O(n)
+Used for lots of inserts and very few finds. 
+
+2. Sorted sequential array:
+	- Array is in sorted by key 
+	- insert: Add to order O(n)
+	- find: Binary Chop, since it's sorted O(log n)
+	- Remove: Find, removenode and shuffle down. O(n)
+
+3. Linked List:
+	- TableNodes are sorted consecutively
+	- insert to the front O(1) for unsorted or O(n) for a sorted list.
+	- Find: Search through potentially all thekeys O(n)
+	- Remove Find using pointer alterations O(n)
+
+4. AVL Tree:
+	- Ordered byKey
+	- Insert: Standard insert O(log n)
+	- Find: Standard find O(log n)
+	- Remove: A standard remove O(log n)
+
+5. Hashing: 
+	- An array in which TableNodes are not stored consectively, their place of storage is calculated using the key and a hash function.
+	- Hashed Key: The result of applying a hash function to a key 
+	- Keys andentries are scattered throughout the array.
+	- Insert: Calculate the place of storage, insert there O(1)
+	- Find: Calculate place of storage, retrieve entry O(a)
+	- Remove: Calculate place of storeag, set it to null O(1)
+	- If there's a collision, you have to have a collision resolution strategy: insert into the next free position.
+	- Hash Function: 
+		- Distribute entries and keys throughout the table. 
+		- Minimise collisons where the position is occupied
+	- Collision Resolution: 
+		- Separate Chaining: Chain together several keys <3
+		- Open Addressing: Store the key entry in a different 
+	- Size of a Tabel: 
+		- too big will wait memory, too small will increase colisions, rehashing
+		- Usse a prime number 
+	- Truncation: 
+		- Ignore parts of the key and use therest as the array index, this is quick. 
+	- Folding:
+		- Partition the key in several parts and then combine them in any convenient array 
+	- Modular Arithmetic: 
+		- Divide the size ofthe table and take the remainder.
+
+

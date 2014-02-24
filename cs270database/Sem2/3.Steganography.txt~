@@ -1,0 +1,41 @@
+18th February 2014 12:00
+========================
+Steganography and Steganalysis by Nitin 
+========================
+- Steganography is not an encryption technique:
+	- Art of hiding theexistence of a message rather than its meaning 
+	- Hides within an object, text or a picture. 
+	- Encypted file may still hide information using this. 
+	- Digital watermarking is a very latest branch of this - usedto copyright and protect digital images, music and software 
+- Digial Watermarking: 
+	- faint logo or words superimposed over the top of an image 
+	- Visible watermark is where you can see the copyright and users name 
+- Steganography vs cryptography: 
+	- Steganography: 
+		- Hides message so it can#t be seen 
+		- Data hidden in picture, Video, text file etc
+		- After hiding the message
+	- Look at slides. 
+- Benefits of Steganoraphy: 
+	- Implemented as a tool of plausible deniability:
+		- Act which leaves little or no evidence of wrong doing or abuse 
+		- In computers refers to data which the owner can deny its existence. 
+	- Soliders and Intelligence agents may be captured and toured into revealing cryptograph keys and other secrets 
+	- Police can misuse their power. 
+	- Private individuals have been tortured by robbers. 
+	- All the above can hide information using steganography
+- Methods: 
+	- hiding a file within a file (software)
+		- Replacing Least Significant Bit
+			- Some bits or bytes are not really needed or are not very important 
+			- These can be replaced with information that is to be hidden 
+			- Doesn't significantly alter the file
+			- 10-15%
+			- Doesn't increase the size of the file 
+		- Injection Based
+			- Data is added normally at the end of the file that increases the size of the file. 
+	- Hiding all Files (Operating Systems)
+		 - Steganographic File Sytem: 
+			- similar to any traditional file system. 
+			- Hide some files, not all files. 
+			- Under development.

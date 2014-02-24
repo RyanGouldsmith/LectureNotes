@@ -1,0 +1,155 @@
+Nitin Lecture 4th February 12:00:
+	- Encryption is the conversion of data from plain readable text to cipher text (un readable) that cannot be easily understood by unauthorised people. Plain text -> Cipher text.
+	- Needs a lot of mathematics. 
+	- Caesar Cipher uses an Encryption Key to increment the values to new values. eg. 
+		EK = 3.
+		a + 3 -> d. 
+	- Decryption is the opposite. Cipher text -> Plain text.
+	- Use the opposite Encryption key to decrement the values eg.
+		EK = -3.
+		d -3 -> a
+	- Cryptography is the principle and method of transforming plain text to ciphers or codes.
+	- Plain text: Normal information 
+	- Ciphertext: the transformed text after encryption. 
+	- Cipher: Any method (algorithm) for tranforming text -> ciphertext. 
+	- Key: Is a sequence of symbols or bits which control the operation of the cryptographic algorithm to transform. 
+		- secure this key. 
+	- Cryptanalysis: The hackers way of getting information from cryptography code. 
+		- The art of tranforming cipher text -> plain text without having information about the key. 
+		- You can have Ethical cryptananalyst for the good, to make sure it's secure. 
+		- To move cryptography forward we need constant work from cryptographers and cryptanalysts. 
+	- 2 simple approaches for cryptanalysis:
+		1. Brute Force (password attack)
+			- Trial and error, doesn't try to decrpyt the plaintext but guess work to get keys, passwords etc.
+			- They are useful for keys and passwords etc, but they can take hours, weeks or years.
+			- More complicated passwords and keys the longer it will take.
+			- Try out Every combination
+			- Need a fast and powerful computer to be effective. 
+			- Window Server OS example: 
+				- 50% of the hackers work is helped by Microsoft. 
+				- They only need to work out the password, since MS give out the Administrator account username. 
+				- Even if you change the account name the SID(security Idenifier) will remain the same. 
+				- Examine the SIDs to work out what has been changed. 
+				- Can brute force the account without having issues of being locked out.
+				- Solutions:
+					- Change password frequently 
+					- Renaming Administrator (Dangerous technique) : Read lecture slide
+					- Security Accounts Manager (Dangerous technique) : Read Lecture Slide.
+					- Move the Active Directory to a remote location, making it harder to find. 
+			- Linux Fedora: 
+				- SSH provides secure remote login capability that encypts connection setup and password.
+				- look at slides for the 2 solitions. 
+		2. Frequency Analysis Attack (text attack)
+			- technique to determine the frequency of letters/groups of letters in a ciphertext.
+			- After knowing a frequency of letters then plaintext could easily be retrieved. 
+			- Used to break most cipher texts
+----------------------------------------------------------------------------------------------------------
+Lecture 2: 12:00 5th February: Algorithms
+-------------------------------
+Types of Cryptography:
+	- Classical : applied on text, or characters.
+		- Oldest Techniques 
+		- Substitution technique : Replace plain text with another symbol
+			- Replaced one at a time.
+		- Transposition : Re-arrange the order of the text.
+			- Applies a permutation function to the text.
+			- Uses 2/3 Rail Fence technique.
+		- Product : Combination of substitution and transposition
+	- Symmetric 
+	- Asymmetric 
+	- One-way Cryptography
+- XOR is used widely: 
+- Rotation/ Shift Method: Used with Registers.Right or Left Shift. Encryption key is the number of times you shift the bits.
+- P-Box (Permutation) Replace the letter index with anothers.
+- Shanon's Theory of Confusion and Diffusion:
+	- Confusion:
+		- Relationship can be made complex between ciphertext and key 
+	- Diffusion:
+		- Relationship can be made complex between ciphertext and plaintext.
+- Round Product is used in modern techniques.
+		- S&P box is used. Use SBox and PBox many times and comes out with a complex output.
+		- Different subkey for each different round, created with help of the main encryption key.
+		- 
+- Encoding and Decoding
+------------------------------------------
+Lecture 11th February 2014: 12:00 continued:
+------------------------------------------
+	- Non-Feistal Cipher or SP-Network
+		- Based on block encoding. 
+		- You have a plain text split into blocks with each block being a x bit size
+		- You then encrypt each block at a single time.
+		- Plain Text XOR Round subkey
+		- XOR on the block with the round key for that block.
+		- Break the block into bytes. 
+		- You will apply the S-BoX ad P-Box on each of the bytes.
+		- Then you have a cipher text
+		- Used in AES
+	- Feistal Cipher or Feistal Network. 
+		- Based on block encoding. 
+		- You have a plain text split into blocks with each block being a x bit size
+		- The Blocks are then split into two, called Left and right.
+		- The 32 bit goes to an E-Box
+		- This gets expanded to 48 bits. 
+		- XOR the 48 bits with the key of the 48 bit.
+		- Applie the XOR resultant to the S-BOX, which converts the 48bit to the 32 bit and P-BOX.
+		- All encryption is done on the right 32 bit.
+		- used in DES 
+		- Swap the data, so the right becomes left and right becomes left. 
+	- Both are used in symmetric key cryptography. 
+	- Types of SKC:
+		- Steam or Bit-Wise: slow 
+		- Block Ciphers: Non-Feistal and Feistal.
+			- DES, TRIPLE DES, AES.
+		- DES:
+			- 1st Standard 
+			- 1970's developed by IBM. 
+			- Public choice from NBS/NIST.
+			- Ended in 1997 when a computer broke the algorithm.
+		- TRIPLE DES: 
+			- Slow
+		- AES: 
+			- Replaces DES
+			- 5 algorithms selected for final. Rijndael Selected by NIST
+			- Flexible with the Key size: 128, 192 or 256 Bit.
+	- AES HEADING SOMETHING ?
+		- 128 bit represented as a 4x4 matrix
+		- Each matrix location holds one byte, 8 bit data 
+		- This doesn't encrypt the data. 
+		- Performs the operation as a state.
+		- Perform the S-POX, P-BOX, then the P-Box again. 
+		- First operation is sub-byte, 
+		- Second is Shift the row (circular shift), then Third operation is shift the column
+		- 1st row is 1 shift, 2nd row is 2 shift, 3 row is 3shift
+		- bytes by byte operation.
+		- 1st: Matrix - sub-byte > S-BOX > look up >  P-box > 2nd: Then shift the row > then p-box > 3rd: Column shift > 4th: Use the round key.
+=================================
+Wednesday 12th Feb 12:00
+=================================
+Lecture Cont.
+=================================
+AKC/PKC
+- decrpyts using the private key (asymmetric)
+	- slower
+- Diffie-Hellman key exchange: 
+	- enables parties at both ends to derive or calculate a shared, secret/private ket without ever sending it to eachother
+	- No real world solution
+	- Agreed on a common number for a letter 
+	- Private number: they're different. 
+	- Raise powers of private number by the common number 
+	- Send the resultant values to eachother.
+	- Calculate the key at their own end by raising the resultant's power by their own number.
+- RSA Algorithm:
+	- many digital signatures use this. 
+	- Select any 2 largest prime number p and q. ex.p=17 q = 11. 
+	- Calculate common number n = p.q => 17.11 = 187.
+	- Calculate totient function -> (p-1)(q-1) = (16 x 10 ) = 160
+	- Select public/encryption key e
+		- 1 < e < totientfunction AND hcf/gcd(e, totientfunction) = 1
+	- Calculate private/ decryption key d 
+		- e.d = 1 mod totentfunction
+	- Encryption m < modulas number. => c = M^e mod n
+	- Decryption ciphertext => m = c^d mod n 
+- One-Way cryptography (Hash Functions)
+	- mathematicals transformation to irreversibly encrypt infomration 
+	- takes binary data and produces a condenced representation called the MD(MEssage Digest)/Hash
+	- Always the same length

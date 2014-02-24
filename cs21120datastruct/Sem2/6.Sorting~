@@ -1,0 +1,62 @@
+Tuesday 18th February 2014
+==========================
+Sorting by Neil something
+==========================
+- Time Complexity 
+	- Linearity is intuitive, would be good if it worked like this.. 
+	- Growth rates or scalability 
+	- Best algorithms lie between quadratic and logarithmic 
+	- Analuse:
+		- Count the No. Loop iterations, executed values, recursive 
+		- Eliminate all but the largest term 
+		- Dominant term is the time complexity 
+		- Disregard everything else
+		- Worst case scenario.
+	- Different Complexities: 
+		- Constant: Takes the same amount of time regardless of input: eg, whether a numberis odd or even
+		- logarithmic: Common in science not in everyday life: ricterscale. 
+		- Linear: Self explanatory
+		- Polynomical: N is raised to a power, so n is the number of inputs. 
+		- Exponential: a number raised to the power N - Permuatation
+- Sorting and Seach: building blocks. 
+- Efficiency bottle-neck: Important for other algorithms. 
+- Human Interpretability
+- Big data issues and bottle-neck 
+- Many unsolved problems remain unsolved, however there's efficient solutions 
+- Humans vs Machines: 
+	- Humans: Able to parallize sorting. 
+		 - Multiple comparisons
+		 - Inelligent Reasoning 
+	- Machines: 
+		- Examine data in a pair-wise manner. 
+2 types of Sorting:
+	- Comparison-based:
+		- Compare data objects, Primitives Strings, ADTs
+	- Address-based:
+		- Automatically assign object to a container using an address, hashing etc.
+		- Suitable for specific data types 
+		- carefully designed 
+		- Clashes can be handled using a comparision based sort, more clashed = higher complexity.
+bubble/Shaker Sort:
+	- Intuitive, easy to understand and code, but that's all 
+	- Most inefficient andslow. O(n^2)
+	- Nested for loops is N^2
+	- Algortithm look on slides.
+	- improved by adding an additional step 
+	- changing iteratoin to bi-directional 
+	- Works best when teh distribution is almost sorted 
+	- Best: O(n) Average O(N^2) Worst O(N^2)
+Selection Sort: 
+	- array implementation of the priority Queue ADT 
+	- Data objects are inseted into the array as they arrive and then extracted in descending order into another array 
+	- Disadvantage: performance overhead for having to find the largest element at each step; traversing entire array. 
+	- Comparison to find the largest data object O(n^2)
+	- Swapping data objects means it's O(n)
+	- Overall is O(n^2)
+	- simpler than O(nlogn)
+Insertion Sort: 
+	- Comparisions and then insert, doesn't require any extra memory
+	- builds a final sorted array one at a time 
+	- less efficient on large lists than more advanced approaches
+	- Can be done in place or using a tree-type data strucuture.
+	

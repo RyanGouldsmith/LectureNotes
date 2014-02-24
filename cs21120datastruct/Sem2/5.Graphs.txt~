@@ -1,0 +1,77 @@
+11th February 2014 10:00
+=================
+Graphs by Richard Shipman
+=================
+- A set of vertices joined by edges. Set of Vertices V and set of Edges E.
+- Vertexis defined by its name or label. 
+- An edge isdfined by 2 vertices which connects: + (optional)
+	- Order of Vertices 
+	- A weight (number)
+- 2 vertices are adjacent if they are connected by an edge 
+- A vertex's degree is no. it's edges.
+Directed Graph (Digraph)
+	- Edge edge is an ordered pair of vertices, to indicate direction.
+	- Line become arrwos 
+	- The indegree of a vertex is thenumber of incoming edges.
+	- Outdegree of a vertex is the number of outgoing edges.
+Traversing a graph:
+	- A path between 2 vertices exists if you can traverse along edges from one vertex to another.
+	- A Path is an ordered listof vertices
+	- Length: Number of edges in the path 
+	- Cost: the sum of the weights on each edge in the path 
+	- Cycle: a path that starts and finishes at the same vertex. (E > M > B > L)
+	- acyclic graph contains no cycles.
+	- Undirected graphs are connected if there is a path between any pair of vertices. 
+	- Diagraphs are usually densely or sparcelt connected. 
+		- Densely: the Ratio of number of edges to numberof vertices is too large 
+		- Sparsely: The above ratio is small.
+Graph representation: 
+	- Adjancency Matrix: 
+		- n vertices need a n x n matrix (where n = |V| number of vertices on the graph) - can store as an 2D array 
+		- Each position in the matrix is 1 if the 2 vertices are connected - 0 if unconnected 
+ 		- Refelective symmetry on the diagonal line. Will always be less the vertex links back to it's self. (undirected)
+		- weighted graphs the position in the matrix is the weight. 
+	- Adjacency list: 
+		- Each vertex store a linked list of adjacent vertices. 
+		- Weighted graphs: Include the weight of the elements of the list.
+Comparing the 2 representations:
+	- Space Complexity 
+		- Adjacenncy matrix is o(|v|^2)  |V| = vertices 
+		- Adjacency list is O(|V| + |E|) |E| = Edges
+	- Static vs Dynamic Rep: 
+		- Adjacency matrix is static: Graph is built in one go. Difficult to alter. 
+		- Adjacency list is dynamic: Graph is built incrementally. Easier to Alter during run-time.
+Algorithms involving graphs: 
+	- Graph Traversal 
+	- Shortest Path Algorithms 
+		- Is an unweighted graph: Shortest length between 2 vertices. 
+		- In an unweighted graph: smallest cost between 2 vertices. 
+	- Minimum Spanning Trees 
+		- Using a tree to connect 
+	- Be careful to avoid going around in circles. 
+	- Mark the vertices which have always been visited, a flag. Set to False if you haven't visited. if true don't seach again
+	- Breadth-First Search uses a queue to keep track of which adjacent vertices might still be unprocessed 
+		- A, B, C, D,F, E
+		- Search everything that's adjacent to the node, then what's adjacent to those nodes.
+	- Depth first search keeps trying to move forward in the graph, until reachinga vertex without no outgoing edges to unmarked vertices.
+	- Shortest Path: 
+		- Find the shortest path from a vertex v to every other vertex in a graph 
+		- Unweigthed path measures the number of edges, ignoring the edges weights.
+			- d_v is the distance between a starting vertex and v
+			- Mark all vertices with d_v = infinty 
+			- Select a starting vertex s, set d_s =0 and set shortest = 0
+			- For all vertices v and d_v = shortest, scan their adjacenctt lists for vertices w where d_w is infinity 
+				- For each such vertex w, set d_w to shortest + 1.
+			- Increment shortest and repeat step 3, until there are no vertices w.
+		- Dijkstra's Algorithm (Shortest Weight path): 
+			- Only works on graphs who have positive weights. 
+			- Works the same as unweighted, except we possibly adjust the values in the vertices more than once.
+			- Get Algorithm off of slides. 
+			- Is an inverse priority queue, in order to select the vertex with the lowest cost.
+			- Time complexity is O(|V|^2 + |E|)
+			- Dense graphs |E| = O(|V|^2) => O(|V|^2)
+			- Sparse graphs -get off slides. 
+			- Negative weights:
+				- Keep track of the number vertices covered 
+				- O(|V| |E|)
+			

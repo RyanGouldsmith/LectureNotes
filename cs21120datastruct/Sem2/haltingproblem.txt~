@@ -1,0 +1,43 @@
+4th February 10:00
+Halting Problem:
+	- This is an uncomputable problem.
+	- Computable: A human going through a set of instructions.
+	- Decidable is a yes or no answer.
+	- The Turing Machine formalised the definitve method. 
+	- Church Turing thesis stated all the different ways of trying to define a definitive method all turned out to be the same principle.
+		- Turning machine is more powerful than a normal computer since the storage is infinite. 
+	- If you can't solve an issue on the turing machine then you can't solve it on a computer. 
+	---------------------------------------------------------------------------------------------------------------------------
+	Turing machine for multiplying a binary number by 2:
+		Tape : # 1 1 0 1 # # # # = 13. Tape head is left most #
+		Theory of x2: # 1 1 0 1 0 # # # = 26. 
+
+		R -> #/0 -> Halt 
+		Keep moving right until you find a # then change it to 0, then halt.
+	
+	Turing machine for subtract unary 
+		Tape : # 1 1 1 1 1 # 1 1 # # # 
+		
+		R -> # -> R -> 1/a -> L -># -> L -> 1/b ---R
+			 ^                               |
+			   |----------------#--------------
+		IF there are no 1's on the loop then:
+			R -> # -> L -> loop all A with # -> # > L -> Loop all b with # -> # -> Halt
+		Go to the # move right, find the first 1 and replace with a. Move left to the next #, replace the 1 with a b, move R find a hash 			and try again. If you can't find the 1 on the loop then check the hash. You then replace all a's and b's with # until finished. 
+ 	-----------------------------------------------------------------------------------------------------------------------------
+	- Halting problem: Given a program and an input (turing machine), will the program eventually halt on that input or will it run forever?
+	- Ex:
+		- Given any program P ( p = TM) any Input (i) whether the program stops on that input is computable.
+			Means: An algorithm must exist for whether p stops on i.
+		- If an algorithm can do it, then a turing machine q can do it.
+			=> q(p,i) = 1 if p doesn't stop on i 
+				    0 if p does stop on i
+		- If we have another TM R (almost a backwards q)
+			=> r(X) = inf.loop  if q(x,x) = 0 
+				     0      if q(x,x) = 1
+		- Applying R to itself gives 2 possibilites: 
+			R(R) = inf.loop so q = 0
+			- would mean that q(r,r) which means R stops on R. Contradicts since it can't stop and have an infinite loop.
+			R(R) = 0 
+			- Would mean that q(r,r) = 1 which means it doesnt stop, but it can contradict since 1 means doesn't stop
+		- This program is not computable. 

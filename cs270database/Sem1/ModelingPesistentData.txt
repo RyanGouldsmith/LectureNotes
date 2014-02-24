@@ -1,0 +1,65 @@
+﻿- Proposed by E.F.Codd - this was an abstract theory of data: used set theory. Used by most modern DBMS; most don't use it though.
+- It concerns 3 aspects: 
+	1) Data Objects: Storing the data 
+	2) Data integrity: Making sure the data is correspondant to reality 
+	3) Data Manipulation: Doing informaiton with it 
+- Model to Relational Database: Relation = table, tuple = row/record, attribute = column, Primary Key = uniquely identifying a row, domain = possible values for an attribute.
+	- Domain: 
+		- Each tuple has one fo these values for the attribute. 
+		- meaningful comparisions, they're a data type. 
+		- traditionally used to support poor management systems. 
+	- Relation
+		- Collection of domains 
+		- Heading: 
+			- set of an attribute: domain pairs, such that each attribute has it's own domain. {<An:Dn>}: <Description:text>
+		- Body:
+			- Set of tuples: each tuple is a set of name:values pairs {<An:Vn>} {<Description:"HelloWorld">}
+		Example: Table:                              Relation
+			UID | Tel                            Heading { <UID:String(3)>, <Tel:Digit(4)>}
+			nwh   2434                           Body{ 
+                                                	           {<UID:nwh>, <Tel:2434>}
+                                                             }
+- A table is a practical way to write down a relation, but it does imply an ordering that's not part of the relaiton model.
+- Relations are defined on sets: 
+	- Set of attributes in the heading
+	- set of tuples in the body
+	- set have no ordering 
+	- Atrtibutes come in no sequence but columns do.
+	- tuples come in no particular sequence, but rows do not have sequence. 
+- Tuples and attributes are unordered, no duplicated tuples, all attributes are atomic [ for the relation ]
+- tuples are unique, object model can have as many objects of the same type as it likes. 
+- Don't write for loops in the relational model.
+
+Relational Data Integrity
+-------------------------
+- A DB is an abstract from reality, so we have to implement integrity rules to enforce plausibility.
+- Domain specific: Specific requirements or a said data structure
+- Inter- attribute: Specific requirements for a said attribute 
+- Cardinality constraints: Number requirements for a said system [like UML]
+- Entity Integrity: tuples identification through primary keys
+- Referential Integrity: If one tuple refers to another it must use it. Foreign Key.
+
+The ouput of a relatioal operation is a relation 
+
+A UNION B returns a relation with the same heading as A or B but no duplicates. 
+
+A intersection B returns a relation with the same heading but returns the only tuple which is in both table. 
+
+A Difference B returns a relation with the same heading returning only the tuples in A that are not in B – all others are discarded.
+A Produt B returns a relation  with the heading of the Union of A and B headings, the set of tuples formed by coalescing all tuples from A with all the tuplesfrom B. Used for theoretical joings of tables.
+{uses the matrice principle}
+	- if the headers have names in common they will have to be renamed. 
+	- replace with numbering systems or Relation.header
+	 
+
+Restrict
+Based one one relation, scalar operator, two attributes. It selects typles or removes rows
+
+Project
+removed collumns, duplicate types eliminated. All attributes names – itendtity projection. No attributes – nullary projection 
+
+Join
+based on equality.
+
+Division
+

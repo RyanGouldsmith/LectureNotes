@@ -1,0 +1,35 @@
+11th Februrary 2014 13:00
+=========================
+Classes in C++ by Jon Bell
+========================
+- Define a class in a header file 
+- Member function code is not on the heap/stack it's in the program area memory. 
+- :: is the scope resolution operator. 
+	- eg: 
+		int ExampleClass::FunctionOne(void){
+			foo;
+		}
+- When we write a member function call the compiler calls the function and tells the function which Object's data to use.
+- Hide a class in a namespace, or an implementation file. Equivelent of a private/protected class. 
+- Access is private by default for classes.
+- ~(tilde) is the destructor. No garabage collector, we need this. Compiler will give you a default one. 
+- Public: Anywhere
+- Protected: Visual from within the class and from within derived classes 
+- Private: Can only be accessed within the class their're declared.
+- You can inherit using these specifiers
+=========================
+18th Februay 2014: 13:00 
+=========================
+Cont. Jon Bell 
+=========================
+- Const means a that an object is not modfiable 
+- Calls for Const Object are disallowed:
+	- Unless the member functions themselves are declared const. 
+	- True even for get memember that do not moidfy the object 
+- if the method doesn't have a const, called by a const object it will reject as we dont know what it will do.
+Friends: 
+	- A friend function of class is defined outside that class' scope yet has the right to access the non-public members of the class. 
+	- Standalone functions, entire classes/member functions of other classes may be declared to be friends of another class.
+	- friendship is granted, not taken.
+	- Noot symmetric or transitive. 
+

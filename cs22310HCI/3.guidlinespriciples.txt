@@ -1,0 +1,16 @@
+24th Februrary 2014 12:00
+=========================
+Guidlines and priciples:
+=========================
+-Theories - High level: 
+	- how HCI occurs
+	- Descriptive, explanatory, predictive
+- Principles - mid level:
+	- applicable 
+	- drive the development process
+	- Analyze and compare the competingdesign 
+- Guidelines - specific and practical: 
+	- Curs design problems
+	- cautions for potential danger 
+	- Reminders based on experience.
+
