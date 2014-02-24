@@ -1,9 +1,0 @@
-10th February 2014
-=================
-Control Structures by Jon Bell
-=================
-- Selection, iteration, function/member function, recursion.
-- if(condition)something else if (cond) something else something 
-- cond ? exp1: expr2;
-- Switch only on an interger or enumerated types.
-	- has switch, case, break, and default.
