@@ -1,0 +1,20 @@
+25th February 2014
+==================
+XML and Data by  Edel
+==================
+- relational database is structured. 
+- every day lift falls into sem-structured.
+- Not all data falls into a relational schema. 
+- XML makes searching by meaning possible, by implementing concepts derived from the strudy of semi-structured data 
+- XML is emerging as a standard for data exchange between different applications.
+- examples of semi structured data: 
+	- minutes of meetings, poster for a show, car for sale, need a housemate, module description.
+- Some structure:
+	- entity instances are grouped together, 
+	- elements are fairly well understood 
+	- instandces have similar elements
+- Irregular:
+	- elements may occur in any order 
+	-  elements may be missing 
+	- elements dont have the same form.
+
