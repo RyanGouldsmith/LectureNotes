@@ -25,5 +25,12 @@ Inheritance by Jon Bell
 	- Abstract class:
 		 - =0 indicates pure virual function, which means it in Java terms Abstract function.
 		 - you can have pure virtual destructors.
-		 - 
+- Hiding Effect:
+	- Replace the variableswith a pointer to an object.
+	- means we only need to change one .cpp file.
+- Deep Copy: 
+	- Deep copy constructor. 
+	
+
+
 
