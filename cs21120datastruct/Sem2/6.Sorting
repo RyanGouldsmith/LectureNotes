@@ -66,3 +66,14 @@ Insertion Sort:
 Shell Sort: 
 	- Modified Insertion Sort
 	- Decreasing Increment Sort.
+=================================
+Lecture Continued 25th February:
+=================================
+- Unix uses quick sort.
+- Stability:
+	- Stable sorting algorithms maintains the relative ordering of object with equal keys 
+	- key is used for comparison. 
+	- no problem if all keys are different 
+- Space Complexity
+	- problem for quick sort if data > memory size.
+- The Art of Computer Programming, volume 3: sorting and searching.
