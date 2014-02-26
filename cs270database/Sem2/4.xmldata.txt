@@ -17,4 +17,25 @@ XML and Data by  Edel
 	- elements may occur in any order 
 	-  elements may be missing 
 	- elements dont have the same form.
-
+=================
+26th February 12:00
+=================
+Lecture Continued.
+=================
+- Using xPath:
+	= There's always a root, then the first element is a child of the root.
+- Xquery is to XML is what SQL is to database tables.
+	= Uses XPath to select nodes and node sets from XML documents 
+- FLWOR: for, let, where, orderby, return.
+	for $everything in xmlfile
+		return <root>{$everything}</root>
+- // means at the current node. 
+- //element means select all the elements no matter where they are in the document 
+- //memember/member : select all member elemets that are children of members elements
+- $variable/element: Selects elements that are children of the variable.
+- parent:: is an axis.
+-{} means evaluated whatever occurs between them.
+- processinginstructuions returns processing instrucution s
+- text() returns charaacter data node.
+- * matches any element
+- @* matchesany attribute
