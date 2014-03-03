@@ -1,0 +1,24 @@
+12:00 Monday 3rd March
+================
+Design PrincipleS
+=================
+- 6 principles
+- make functions visible
+- If they're out of site then it is difficult for the user to find and use them.
+Feedback:
+- Keeping the user in the loop so the user knows what has just been done
+Constraints:
+- Restriciting the possibe ations that can be performed: greyed out items on a menu
+- 3 types of Behaviour:
+	1. Physical
+		- Restrict the movement of things.		
+	2. Logical 
+		- Exploit people's everyday common sense about the way something works.
+	3. Cultural 
+		- Colours are a confusing one, they can mean different things in different cultures.
+Mappings: 
+	- Spatial relationship between the layout of the controls and which is being controlled.
+Consistency:
+ 	- Design interfaces to have similar operations and use similar elements for similar tasks.
+Affordance: 
+	- Properties of Objets which provide clues to how they work.
