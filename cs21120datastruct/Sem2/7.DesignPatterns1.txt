@@ -1,0 +1,39 @@
+4th March 2014
+================
+Design Patterns lecture 1 Harry Strange
+================
+- Code examples are in c++ in the Design Patterns
+- Time is money, so don't create things from scratch
+Software Re-Use:
+- Copy and Paste (ad hoc)
+- Class libraries
+- Frameworks
+- Patterns: Abstract, re-usable design guidelines, encapsulate proen development expertise.
+Patterns aren't:
+	- Concrete Designs 
+	- automatic processes
+	- removing any uncertainty. 
+Patterns are: 
+	- Repeating desin solutions to a complex problem
+	- They may require some modification.
+	- History: Came from an architect.
+Good for:
+	- Improving communication via common vocabulary 
+	- Capture design knowledge
+	- Support Change
+	- promotion of decoupling between objects.
+Overarching Design Principle:
+	- WE want out design to e open for extension but closed for modification.
+Describing them:
+	- name: Helps us identify the pattern, they're descriptive.
+	- problem: When to apply the pattern, providing context. 
+	- solution: Describes theelemets that make up the design. 
+	- consequences: Benefits and draws back of applying the pattern
+Singleton Pattern: 
+	- Ensures a class only has one instance, and provides a gloval point of access o it. 
+	- Protected, restricted.
+	- Can't instansiate the singleton, call the get the instance method.
+	- Controls how and when a client accesses the instance.
+	- Permits a variabble number of instances. 
+	- Can make Unit testing very difficult: drawback.
+	- It's not Thread safe.
