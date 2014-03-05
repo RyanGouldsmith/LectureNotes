@@ -1,0 +1,34 @@
+5th March 2014
+----------------
+NoSQL by Edel 
+================
+- Not a relational database.
+Characteristics:
+- Largevolumes of data 
+- variable traffic 
+- No schema - what tables and what columns are in those tables
+- Partition tolerance  - can move to different disks easier.
+- Various data models 
+- Various query languages
+- Eventual consistency
+Advantages:
+- making use of commodity servers, and run the database across these servers. 
+- Handle higher volumes of dataand higher transactions rates than rdms 
+- Less need for db administrators 
+- lower startup costs 
+- lower expansion costs
+- few is any data model restrictions.
+DisAdvantages: 
+- Lack expert support because it's only been around for ashort while, expertise is scoped to the choice of nosql system.
+- Many Data manipulaiton languages:
+	- reduces portability of queries. 
+	- reduces transferability of skills 
+- no schema, reduces database maintainability 
+- no normalization challenges consistency 
+- wholedocument emphasis challenges analysis of data sets.
+reasons to use NoSql:
+- Low cost scaling 
+- Data doesnt lend itself to conventional normalization: character large objects and binary large objects
+- Large amounts of temporary data: incomplete forms. 
+- Reduced needs for transactions. 
+
