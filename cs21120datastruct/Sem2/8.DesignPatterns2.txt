@@ -1,0 +1,33 @@
+7th March 2014:
+===============
+Patterns by Harry 
+===============
+- Creational Patterns:
+	- Used to create Objects
+- Structural Patterns:
+	- Manage Structures
+- Behavioural Patterns:
+	- Describe interactions
+- Architectural Patterns:
+	- describe higher level structures (MVC)
+====================
+Creational Patterns:
+-Separate code that varies from code that stays the same
+- System is independent of:
+	- how objects are created, composed and represented.
+- Important as systems grow and evolve.
+- 3 recurring themes:
+	1. encapsulate knowledge about concrete classes
+	2. hide how instances are created
+	3. all client code knows is interface or class at root hierarchy. knows about abstract class or interface 
+	- means we get a very flexible system.
+Factory:
+	- creates objects hides instantiation.
+	- Consequences:
+		- Encapsulates the insantiation of concrete types
+		- Elimites the need to bind application specific classes to your code
+Builder
+Prototype
+Singleton
+Object Pool
+
