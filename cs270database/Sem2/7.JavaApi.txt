@@ -1,0 +1,25 @@
+11th March 2014
+==================
+Java API pesistence by Edel
+==================
+- An application has a data model 
+- Needs pesistent dataa
+- Impedence mismatch: the data might be mismatched when we store and process the data.
+- Extend high level language by embedding query language statements in the language 
+- Extend the query language with a programming language consatruct. Server side database action 
+- Call level interace from a programming langaueg 
+- persistence layer: clean separation of the logical application and the persistent data storage
+Call level Interface: 
+- Handle on the db
+- Send queries 
+- process the queries.
+JBDC:
+- Driver manager implements conenction, statement and result set
+- Connection acts as a handle
+- statement enables creation execution
+Java Persistence: 
+- CLI theres explicit translation between database table and programming language 
+- Database and application program are designed separately and ade to work together
+- Queries are represented as strings int he application
+- persistence layer provides a clearerseparation between teh application logic and database 
+- api allows us to design with obects and have the library function deals with the translation to and from the tables.
