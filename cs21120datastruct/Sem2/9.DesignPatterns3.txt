@@ -1,0 +1,21 @@
+11th March 2014
+========================
+Abstract Factory Pattern by Harry Strange
+========================
+- We want to create families of related objects without having to depend
+CosequenceS: 
+- exchangeable product families
+- Consistency among the object 
+- supporting new products is difficult
+Factory method vs Abstract Fact:
+	- Both good at decoupling 
+	- Fact meth: Inheritence Abstract fact: Composition
+	- Fact meth: single prodouct.
+
+When to use Factory Method:
+- decouple client code from concrete classes
+- you dont know what conrete classes are needed
+Abstract Factory:
+- Create families of products
+- Composition 
+- used in creating portable cross platform guis
