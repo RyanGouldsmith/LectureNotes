@@ -1,0 +1,43 @@
+14th March 2014
+==============
+Structual Design Patterns by Harry Strange
+=============
+Class vs Object
+Class: Inheritence to compose interfaces to realise the new functionality
+Object: Composing Objects together to build a system of new functionality - define the way they're composed at run time, more flexibility 
+Adapter Pattern:
+- Problem:
+	 - Classes that have different interfaces that need to work together
+- Solution: 
+	- Sits in the middle, and converts the interface of a class to another inface that the client expects. 
+	- Adapter may need to reform the request to match another method
+- Consequences:
+	- Over-ride Adaptees behavior. You can work with multiple adaptees.
+Decorator Pattern:
+Problem:
+	- Want to extend the functionality without inheritance
+Solution:
+	- Decorator adds additional responabilites to an object.
+Consqueunces:
+	- More flexibility than static inherirance. Avoids feature laden classes high up the hierarchy
+Proxy Pattern:
+Sits inbetween the client and an Objject.
+problem:
+	- Control access to an object
+Solution: 
+	- provides a surrogate placeholder for another object to control access to the object
+Consequeunces:
+	- Remote Proxy: hide location of the object
+	- Virtual Proxy: Perform optimisation such as create on demane
+	- Protection Proxy: Controls access.
+Facade Pattern:
+Plonks in the middle(?)
+Problem:
+	need to simlify access to a large sub ssystem of interfaces 
+Soltion: 
+	Provides a unified interface to those in the subsystem
+consequences: 
+	- shields client from subsyste m components. Promotes weak coupling.
+Similarities:
+	- implmentation can often be similar 
+	- intent is key.
