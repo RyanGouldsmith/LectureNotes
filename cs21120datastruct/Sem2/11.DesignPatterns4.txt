@@ -1,0 +1,32 @@
+18th March 2014: 10:00
+==========================
+Behavioural Design Patterns By Harry Strange
+==========================
+- Todo with assignment of responsibility 
+- Describes the communication between object and classes 
+	- Identify and characterise common communicaton 
+- Increases flexibility, decoupling applications.
+- Comple flow.
+- State, Observer, Iterator, Mediator, memento, command, chain of responsibility 
+State Pattern:
+- We want to alter the way an object behaves by it's internal state.
+- Localises state specfic behaviour and parititions behaviour  for different states 
+- State transitions are explicit
+- A lot of classes.
+Observer Pattern:
+- Whenan object changes state we want to inform other interesteed objects of this change
+Consequences: 
+- Vary subjects and Observers independently, which means it's reuseable
+- Loose coupling between subject and the observer, can belong to different levels of abstraction in our system.
+- Un expected updates- maybe a need for an added protocol to sanitise whether calling update is needed.
+MVC:
+- decouple our systems components. 
+- separate the representation of information from the users intereaction with it. 
+- divides the system into 3 components:
+	- Model: underlying information 
+        - View: the way the user sees the model. knows about the model 
+	- Controller:  how the user manipulates the model and view is updated.
+- Consequences:
+	- Allows for expansion 
+	- minimise dependency 
+		
